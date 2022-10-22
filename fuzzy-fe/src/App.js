@@ -1,8 +1,10 @@
 import './App.css';
-import {Layout, Menu} from "antd";
-import 'antd/dist/antd.css';
+import {Layout} from "antd";
+import {Route, Routes} from "react-router-dom";
+import HomePage from "./page/HomePage";
+import ResultPage from "./page/ResultPage";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content} = Layout;
 
 function App() {
   return (
@@ -11,10 +13,13 @@ function App() {
         </Header>
         <Content
             style={{
-              padding: '0 50px',
+              padding: '0 100px',
             }}
         >
-          <div className="site-layout-content">Content</div>
+            <Routes>
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="/result" element={<ResultPage/>}/>
+            </Routes>
         </Content>
       </Layout>
   );
