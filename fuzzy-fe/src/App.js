@@ -1,6 +1,6 @@
 import './App.css';
 import {Layout} from "antd";
-import {Route, Routes} from "react-router-dom";
+import {Link, Route, Routes} from "react-router-dom";
 import HomePage from "./page/HomePage";
 import ResultPage from "./page/ResultPage";
 
@@ -9,7 +9,32 @@ const { Header, Content} = Layout;
 function App() {
   return (
       <Layout className="layout">
-        <Header>
+        <Header style={{
+            height: '80px'
+        }}>
+            <div style={{
+                width: '100%',
+                height: '100%',
+                padding: '0 50px',
+                display: 'flex',
+                justifyContent: "flex-end",
+                alignItems: 'center',
+                fontSize: '16px',
+                color: 'white',
+                textTransform: 'uppercase'
+            }}>
+                <Link style={{
+                    marginRight: '20px',
+                    color: 'white'
+                }} to={"/"}>
+                    Trang chủ
+                </Link>
+                <div style={{
+                    marginLeft: '20px'
+                }}>
+                    Liên hệ
+                </div>
+            </div>
         </Header>
         <Content
             style={{

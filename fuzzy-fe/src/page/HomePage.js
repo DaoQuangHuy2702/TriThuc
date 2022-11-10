@@ -16,9 +16,9 @@ function HomePage(props) {
         form.submit();
     }
 
-    const onFinish = (values) => {
-        console.log('Huy value: ', values);
-        navigate('/result')
+    const onFinish = (value) => {
+        console.log('Huy value: ', value);
+        navigate(`/result?population=${value?.population}&gdp=${value?.gdp}&gdpPerCapita=${value?.gdpPerCapita}&unemploymentRate=${value?.unemploymentRate}`)
     }
 
     const handleOpen = () => {
@@ -28,9 +28,9 @@ function HomePage(props) {
     return (
         <div className={"site-layout-content"}>
             <p style={{
-                fontSize: '40px',
+                fontSize: '35px',
                 textAlign: "center",
-                marginTop: '50px',
+                marginTop: '40px',
                 fontWeight: '600'
             }}>
                 Hệ thống đánh giá chỉ số phát triển kinh tế của quốc gia
