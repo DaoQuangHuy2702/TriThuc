@@ -127,7 +127,7 @@ function ResultPage(props) {
             dataIndex: 'label',
         },
         {
-            title: 'Hệ số hỗ trợ',
+            title: 'Độ hỗ trợ',
             dataIndex: 'value',
         },
     ];

@@ -32,6 +32,8 @@ function FormAsk(props) {
                                 style={{width: '100%'}}
                                 controls={false}
                                 placeholder={'Nhập dân số'}
+                                stringMode={true}
+                                min={0}
                             />
                         </Form.Item>
                     </Col>
@@ -44,6 +46,8 @@ function FormAsk(props) {
                                 style={{width: '100%'}}
                                 controls={false}
                                 placeholder={'Nhập GDP'}
+                                stringMode={true}
+                                min={0}
                             />
                         </Form.Item>
                     </Col>
@@ -56,6 +60,8 @@ function FormAsk(props) {
                                 style={{width: '100%'}}
                                 controls={false}
                                 placeholder={'Nhập GDP bình quân đầu người'}
+                                stringMode={true}
+                                min={0}
                             />
                         </Form.Item>
                     </Col>
@@ -68,6 +74,8 @@ function FormAsk(props) {
                                 style={{width: '100%'}}
                                 controls={false}
                                 placeholder={'Nhập tỷ lệ thất nghiệp'}
+                                stringMode={true}
+                                min={0}
                             />
                         </Form.Item>
                     </Col>
